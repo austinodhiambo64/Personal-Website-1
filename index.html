@@ -4,22 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Website</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/script.js"defer></script>
+    <title>Portfolio</title>
 </head>
 <body>
-<!-- Portfolio -->
+    <header>
+        <nav>
+            <ul class="nav-links">
+               <li class="nav-links"><a href="#home">Home</a></li>
+               <li class="nav-links"><a href="#projects">About</a></li>
+               <li class="nav-links"><a href="#achievements">Projects</a></li>
+               <li class="nav-links"><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+	<div class="container">
+		<img src="images/code.jpg" alt="Snow" style="width:100%;">
+		<div class="centered">
+        I am Austin Odhiambo, A software Engineer at Moringa School
+        <br><button id="myBtn" class="button">Contact Me</button>
+        </div>
+	</div>
 
-    <!-- Nav bar -->
+    <div class="about-me">
+      <h1>About me</h1>
+      <div class="about-me-description">
+        <div>
+          <img class="graduation-img" src="/images/graduation.jpg" alt="">
+        </div>
+        <div>
+          
+          <p class="about-me-dummy"> This iss simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              It has survived not only five centuries, but also the leap into electronic typesetting,
+              remaining essentially unchanged. It was popularised in the 1960s with the release of
+              Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of Lorem Ipsu</p>
+      </div>
+      
+      </div>
+        
+    </div>
+    <section class="project-section" id="project">
+      <h1>Projects</h1>
 
-    <!--Home  -->
-
-    <!-- Projects -->
-
-    <!-- Contact me -->
-
-
-
-   <link rel="stylesheet" href="./script.js">
+      <div class="row">
+        <div class="column">
+          <img src="/images/sprinklers.jpg"
+            alt="project design"
+            width="300"
+            height="200" />
+          <p>Sprinkler Design</p>
+        </div>
+        <div class="column">
+          <img
+            src="/images/code.jpg"
+            alt="Coding"
+            width="300"
+            height="200" />
+          <p>Learning Code</p>
+        </div>
+        <div class="column">
+          <img
+            src="/images/mentorship.jpg"
+            alt="mentorship"
+            width="300"
+            height="200" />
+          <p>Mentoring people</p>
+        </div>
+      </div>
+    </section>
+    <section id="details">
+        <div>
+          <h3 class="contact">Contact</h3>
+          <p>
+            <a class="contact" href="mailto:austinodhiambo64@gmail.com"
+              >austinodhiambo64@gmail.com</a
+            ><br />
+            <p><a class="contact" href="tel:+2547123456">Telephone: +254712345678</a></p><br />
+        
+          </p>
+        </div>
+  
+        <div>
+          <h3 class="contact">Correspondence</h3>
+          <p class="contact">
+            Exceptional Code<br />
+            P.O. Box 14825<br />
+            Tandale
+          </p>
+        </div>
+  
+  
+        <div>
+          <h3 class="contact">Follow</h3>
+          <p>
+            <a class="contact" href="#" target="https://www.youtube.com/channel/UC-eSdXyBX1Vgrcbf4uZm1yw">YouTube</a><br />
+            <a class="contact"  href="#" target="_blank">Facebook</a><br />
+            <a class="contact"  href="#" target="https://twitter.com/austin_without">Twitter</a>
+          </p>
+        </div>
+      </section>
+    </body>
+  </html>
 </body>
 </html>
