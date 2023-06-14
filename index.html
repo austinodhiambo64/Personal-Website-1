@@ -1,114 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
-    <script src="./script.js"defer></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
     <title>Portfolio</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul class="nav-links">
-               <li class="nav-links"><a href="#home">Home</a></li>
-               <li class="nav-links"><a href="#projects">About</a></li>
-               <li class="nav-links"><a href="#achievements">Projects</a></li>
-               <li class="nav-links"><a href="#Contact">Contact</a></li>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center ms-auto"
+      >
+        <div class="container">
+          <div
+            class="collapse navbar-collapse d-flex justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
             </ul>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
-	<div class="container">
-		<img src="./images/code.jpg" alt="Snow" style="width:100%;">
-		<div class="centered">
-        I am Austin Odhiambo, A software Engineer at Moringa School
-        <br><button id="myBtn" class="button">Contact Me</button>
-        </div>
-	</div>
-
-    <div class="about-me">
-      <h1>About me</h1>
-      <div class="about-me-description">
-        <div>
-          <img class="graduation-img" src="/images/graduation.jpg" alt="">
-        </div>
-        <div>
-          
-          <p class="about-me-dummy"> This iss simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-              It has survived not only five centuries, but also the leap into electronic typesetting,
-              remaining essentially unchanged. It was popularised in the 1960s with the release of
-              Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of Lorem Ipsu</p>
+    <div class="hero">
+      <img src="./images/code.jpg" alt="Snow" style="width: 100%" />
+      <div class="hero-content">
+        <h1>I am Austin Odhiambo</h1>
+        <p>A Software Engineer at Moringa School</p>
+        <button id="myBtn" class="button">Contact Me</button>
       </div>
-      
-      </div>
-        
     </div>
-    <section class="project-section" id="project">
-      <h1>Projects</h1>
 
-      <div class="row">
-        <div class="column">
-          <img src="./images/sprinklers.jpg"
-            alt="project design"
-            width="300"
-            height="200" />
-          <p>Sprinkler Design</p>
+    <div class="about-section">
+      <div class="container">
+        <h1>About me</h1>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="about-me-description">
+              <div class="graduation-image">
+                <img src="./images/graduation.jpg" alt="Graduation" />
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about-me-description">
+              <div class="about-me-text">
+                <p>
+                  From gears to code, Austin is a mechanical engineer turned
+                  coding maestro. With problem-solving prowess and a knack for
+                  collaboration, he's the perfect blend of wit and tech. Degree
+                  in hand and a full stack software development cert from
+                  Moringa School, Austin is ready to tackle any challenge that
+                  comes his way.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="column">
-          <img
-            src="./images/code.jpg"
-            alt="Coding"
-            width="300"
-            height="200" />
-          <p>Learning Code</p>
-        </div>
-        <div class="column">
-          <img
-            src="./images/mentorship.jpg"
-            alt="mentorship"
-            width="300"
-            height="200" />
-          <p>Mentoring people</p>
+      </div>
+    </div>
+
+    <section class="project-section">
+      <div class="container">
+        <h1>Projects</h1>
+        <div class="row">
+          <div class="col-lg-4 col-md-6">
+            <div class="column">
+              <img src="./images/sprinklers.jpg" alt="Sprinkler Design" />
+              <p>Sprinkler Design</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="column">
+              <img src="./images/code.jpg" alt="Learning Code" />
+              <p>Learning Code</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="column">
+              <img src="./images/mentorship.jpg" alt="Mentoring People" />
+              <p>Mentoring People</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <section id="details">
-        <div>
-          <h3 class="contact">Contact</h3>
+
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-details">
+          <h3 class="contact-heading">Contact</h3>
           <p>
-            <a class="contact" href="mailto:austinodhiambo64@gmail.com"
+            <a class="contact-email" href="mailto:austinodhiambo64@gmail.com"
               >austinodhiambo64@gmail.com</a
             ><br />
-            <p><a class="contact" href="tel:+2547123456">Telephone: +254712345678</a></p><br />
-        
+            <a class="contact-phone" href="tel:+2547123456"
+              >Telephone: +254712345678</a
+            >
           </p>
         </div>
-  
-        <div>
-          <h3 class="contact">Correspondence</h3>
-          <p class="contact">
+
+        <div class="correspondence-details">
+          <h3 class="correspondence-heading">Correspondence</h3>
+          <p class="correspondence-address">
             Exceptional Code<br />
             P.O. Box 14825<br />
             Tandale
           </p>
         </div>
-  
-  
-        <div>
-          <h3 class="contact">Follow</h3>
+
+        <div class="follow-details">
+          <h3 class="follow-heading">Follow</h3>
           <p>
-            <a class="contact" href="#" target="https://www.youtube.com/channel/UC-eSdXyBX1Vgrcbf4uZm1yw">YouTube</a><br />
-            <a class="contact"  href="#" target="_blank">Facebook</a><br />
-            <a class="contact"  href="#" target="https://twitter.com/austin_without">Twitter</a>
+            <a
+              class="follow-youtube"
+              href="https://www.youtube.com/channel/UC-eSdXyBX1Vgrcbf4uZm1yw"
+              target="_blank"
+              >YouTube</a
+            ><br />
+            <a class="follow-facebook" href="#" target="_blank">Facebook</a
+            ><br />
+            <a
+              class="follow-twitter"
+              href="https://twitter.com/austin_without"
+              target="_blank"
+              >Twitter</a
+            >
           </p>
         </div>
-      </section>
-    </body>
-  </html>
-</body>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

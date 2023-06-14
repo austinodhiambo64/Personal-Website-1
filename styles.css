@@ -1,9 +1,9 @@
-
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+
 nav {
     background-color: #333;
     color: #fff;
@@ -34,11 +34,13 @@ nav a:hover {
     color: #333;
     border-radius: 5px;
 }
-.container {
+
+.hero {
     position: relative;
     text-align: center;
     color: white;
 }
+
 .button {
     background-color: #4CAF50;
     border: none;
@@ -50,27 +52,32 @@ nav a:hover {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-  }
-.about-me > h1 {
+}
+
+.about-section {
+    background: linear-gradient(to right, #494964, #6f6f89);
+    padding: 40px;
+}
+
+.about-section h1 {
     text-align: center;
     margin-top: 30px;
+    color: white;
+}
 
-}
-.about-me-dummy{
-    margin-left: 30px;
-    
-}
-.about-me-description{
+.about-me-description {
     display: flex;
     justify-content: center;
     margin-top: 10px;
 }
-.graduation-img{
+
+.graduation-image img {
     margin-left: 30px;
     border-radius: 30px;
     width: 300px;
 }
-.centered {
+
+.hero-content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -78,107 +85,82 @@ nav a:hover {
     font-size: 28px;
     text-align: center;
 }
-body{
+
+body {
     font-family: 'Poppins', sans-serif;
 }
-.logo-container, .h1,.nav-links{
-    display: flex;
-}
 
-.logo-container{
-    align-content: center;
-}
-
-
-.about-section{
-    background: linear-gradient(to right, #494964, #6f6f89);
-
-}
-
-
-.about-content p{
-    font-size: 18px;
-    text-align: center;
-}
-header .about-section{
-    align-content: center;
-}
-
-h2{
-    text-align: center;
-}
-.about-row{
-    display: flex;
-}
-.about-column{
-    width: 50%;
-    padding: 30px;
-}
-
-.about-column h3{
-    text-align: center;
-    padding-bottom: 10px;
-}
-.about-list-content{
-    text-align: center;
-}
-.about-list{
-    display: inline-block;
-    text-align: left;
-
-}
-.about-list li{
-    padding-bottom: 10px;
-}
-
-table, th, td{
-    border: 1px solid black;
-    border-collapse: collapse;
-    padding: 10px;
-}
-.urembo-tu{
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    opacity: 0.7;
-    margin: auto;
-}
 .project-section {
     background-color: rgb(212, 204, 204);
     padding: 40px;
     margin-top: 30px;
 }
-.project-section h1{
-    text-align: center;
-        font-size: 40px;
-        padding-bottom: 20px;
-}
-.project-section p{
-    font-style: italic;
-    font-weight: 30px;
 
-font-weight: 600;
+.project-section h1 {
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 20px;
 }
-.row{
+
+.project-section p {
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.row {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.column{
+
+.column {
     width: 33.33%;
 }
-.column > img{
+
+.column > img {
     border-radius: 10px;
+    width: 100%;
 }
 
-#details{
-    display: flex; /* displays the info in a row */
-    background-color:#333;
-    margin-top: 30px; /* This keeps a distance between the section and the section just above it */
-    justify-content: space-around; /* creates spaces between items in this section */
-  
-  }
-  .contact{
+.contact-section {
+    display: flex;
+    background-color: #333;
+    margin-top: 30px;
+    justify-content: space-around;
     color: white;
-  }
-  
+    padding: 30px;
+}
+
+.contact-heading,
+.correspondence-heading,
+.follow-heading {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.contact-details,
+.correspondence-details,
+.follow-details {
+    text-align: center;
+}
+
+.contact-email,
+.contact-phone,
+.follow-youtube,
+.follow-facebook,
+.follow-twitter {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact-email:hover,
+.contact-phone:hover,
+.follow-youtube:hover,
+.follow-facebook:hover,
+.follow-twitter:hover {
+    text-decoration: underline;
+}
+
